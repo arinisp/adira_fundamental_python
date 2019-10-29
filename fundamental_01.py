@@ -43,18 +43,32 @@ customer2_occupation = FIX
 
 customer3_name = 'Eka'
 customer3_jenis_kelamin = WANITA
-customer3_total_income = 4200000
+customer3_total_income = 10000000
 customer3_existing = True
 customer3_occupation = NON_FIX
 
 if customer1_existing :
     print(f'{customer1_name} masih aktif')
+else:
+    print(f'{customer1_name} tidak aktif')
 
-if customer1_existing :
+if customer2_existing :
     print(f'{customer2_name} masih aktif')
+else:
+    print(f'{customer2_name} tidak aktif')
 
-if customer1_existing:
+if customer3_existing:
     print(f'{customer3_name} masih aktif')
+else:
+    print(f'{customer3name} tidak aktif')
 
-
-print(f'{nama_program} versi{versi} oleh{author}')
+#kasus1 customer 1 income range : <3jt, 3jt-6jt, 6jt-9jt
+print (f'Pengecekan gaji {customer1_name} sebesar {customer1_total_income}')
+if customer1_total_income < 3000000 :
+    print('Gaji terlalu rendah')
+elif customer1_total_income >= 3000000 and customer1_total_income < 6000000:
+    print('Kelas menengah')
+elif customer1_total_income >= 6000000 and customer1_total_income < 9000000:
+    print('Kelas atas')
+else:
+    print('Gaji tinggi banget')
