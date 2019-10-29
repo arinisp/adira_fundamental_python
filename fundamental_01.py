@@ -119,3 +119,18 @@ print(customer1_alamat['City'])
 print(customer1_alamat['Provinsi'])
 print(customer1_alamat['ZIP Code'])
 print(customer1_alamat['Country'])
+
+#cetak customer di list/array
+print(customers[0])
+
+#simpan customer di array
+#customers_by_name = dict() spt ini bisa
+customers_income_by_name = {} #ini juga bisa
+customers_income_by_name [customer1_name] = customer1_total_income
+customers_income_by_name [customer2_name] = customer2_total_income
+customers_income_by_name [customer3_name] = customer3_total_income
+
+print ('Alamat customer by name')
+for name in customers_income_by_name:
+    total_income = customers_income_by_name[name]
+    print(f'{name} total_income = {total_income}')
