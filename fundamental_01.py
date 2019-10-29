@@ -133,4 +133,4 @@ customers_income_by_name [customer3_name] = customer3_total_income
 print ('Alamat customer by name')
 for name in customers_income_by_name:
     total_income = customers_income_by_name[name]
-    print(f'{name} total_income = {total_income}')
+    print(f'total_income {name} = {total_income}')
