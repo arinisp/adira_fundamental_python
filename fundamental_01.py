@@ -34,18 +34,45 @@ customer1_jenis_kelamin = PRIA
 customer1_total_income = 3500000
 customer1_existing = True
 customer1_occupation = FIX
+customer1_alamat = {
+    'Line 1' : 'Kemanggisan',
+    'Kelurahan' : 'Setiabudi',
+    'Kecamatan' : 'Setiabudi',
+    'City' : 'Jakarta Selatan',
+    'Provinsi' : 'DKI Jakarta',
+    'ZIP Code' : '16444',
+    'Country' : 'Indonesia'
+}
 
 customer2_name = 'Sari'
 customer2_jenis_kelamin = WANITA
 customer2_total_income = 5500000
 customer2_existing = False
 customer2_occupation = FIX
+customer2_alamat = {
+    'Line 1' : 'Kemanggisan',
+    'Kelurahan' : 'Setiabudi',
+    'Kecamatan' : 'Setiabudi',
+    'City' : 'Jakarta Selatan',
+    'Provinsi' : 'DKI Jakarta',
+    'ZIP Code' : '16444',
+    'Country' : 'Indonesia'
+}
 
 customer3_name = 'Eka'
 customer3_jenis_kelamin = WANITA
 customer3_total_income = 10000000
 customer3_existing = True
 customer3_occupation = NON_FIX
+customer3_alamat = {
+    'Line 1' : 'Kemanggisan',
+    'Kelurahan' : 'Setiabudi',
+    'Kecamatan' : 'Setiabudi',
+    'City' : 'Jakarta Selatan',
+    'Provinsi' : 'DKI Jakarta',
+    'ZIP Code' : '16444',
+    'Country' : 'Indonesia'
+}
 
 if customer1_existing :
     print(f'{customer1_name} masih aktif')
@@ -72,3 +99,23 @@ elif customer1_total_income >= 6000000 and customer1_total_income < 9000000:
     print('Kelas atas')
 else:
     print('Gaji tinggi banget')
+
+#coba cetak semua nama customer
+
+#tanpa list
+print(customer1_name, customer2_name, customer3_name)
+
+#dengan list
+print('Daftar customer')
+customers = [customer1_name, customer2_name, customer3_name]
+for i in range (0, len (customers)) :
+    print (f'{i+1}. {customers[i]}')
+
+print(customer1_alamat)
+print(customer1_alamat['Line 1'])
+print(customer1_alamat['Kelurahan'])
+print(customer1_alamat['Kecamatan'])
+print(customer1_alamat['City'])
+print(customer1_alamat['Provinsi'])
+print(customer1_alamat['ZIP Code'])
+print(customer1_alamat['Country'])
