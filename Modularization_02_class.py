@@ -76,3 +76,4 @@ customerX = BadCustomer('Boni', PRIA, 3500000, True, FIX,  {
     'Country': 'Indonesia'
 })
 print (customerX)
+

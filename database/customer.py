@@ -29,3 +29,13 @@ class Customer: #Cetakan untuk customer (class)
         else:
             result = 'Gaji tinggi banget'
         print(f'Pengecekan income {self.name} sebesar {self.total_income}, status = {result}')
+
+    def cari_motor_yang_sesuai(self):
+        result = ''
+    if self.total_income < 3000000:
+        result = 'Beat'
+    elif self.total_income >= 3000000 and self.total_income < 6000000:
+        result = 'Vario'
+    else:
+        result = 'N-Max'
+    print(f'Motor yang sesuai untuk {self.total_income} adalah {result}')
