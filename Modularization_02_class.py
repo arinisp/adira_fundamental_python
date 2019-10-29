@@ -52,6 +52,8 @@ customer1 = Customer('Boni', PRIA, 3500000, True, FIX,  {
     'ZIP Code': '16444',
     'Country': 'Indonesia'
 })
+customer2 = Customer('Sari', WANITA, 5500000, False, FIX, {})
+customer3 = Customer('Eka', WANITA,10000000, True, NON_FIX, {})
 
 customer1.check_status_peminjaman()
 customer1.check_income()
